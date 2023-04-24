@@ -1,4 +1,4 @@
-# ComplexityGenerator
+# Complexity Generator
 A program that generates a semi random array to use for computing time complexities.
 
 To begin we must generate a seed. We can do this by executing the following command:
@@ -14,3 +14,9 @@ We can now generate our testcases as follows:
 ./testCaseGenerator 50 < seed > test50.in
 ```
 This will generate a testcase of 50 numbers and store it in test50.in
+
+#Errors
+If you get permission denied errors you can fix this as follows:
+```
+sudo chmod +rwx genSeed testCaseGenerator
+```
